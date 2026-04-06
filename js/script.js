@@ -16,4 +16,21 @@ function curtir() {
 
 }
 
+document.getElementById("likeBtn").addEventListener("click", curtir); 
+
+function Descurtir() {
+
+  if(descurtido == false){
+    deslikeCount++;
+    descurtido = true;
+    document.getElementById("deslikeCount").innerText = deslikeCount;
+  }else{
+    deslikeCount--;
+    descurtido = false;
+    document.getElementById("deslikeCount").innerText = deslikeCount;
+  }
+
+
+}
+
 document.getElementById("likeBtn").addEventListener("click", curtir);
